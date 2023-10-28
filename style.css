@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+}
+/* Basic styling for the navigation bar */
+.navbar {
+  margin-top: 100px;
+  background-color: orange;
+  overflow: hidden;
+}
+#home {
+  margin-left: 70px;
+  padding: 14px 35px;
+}
+/* Style for the top-level navigation items */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: darkgoldenrod;
+  padding: 14px;
+}
+/* Style for the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Style for the dropdown content when hidden */
+.dropdown-content {
+  column-count: 3;
+  margin-top: 46px;
+  width: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: darkgoldenrod;
+}
+/* Style for the dropdown links */
+.dropdown-content a {
+  margin-top: 10px;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  padding: 12px 16px;
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+.row2 {
+  float: left;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
