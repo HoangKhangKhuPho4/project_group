@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,37 +18,817 @@
   <body>
     <div class="header">
       <h1>vietjack.com</h1>
-      <div class="actions"> 
-      <div class="custom-search-section">
-        <input type="text" id="custom-search-input" placeholder="Nhập từ khóa tìm tài liệu, khóa học..." />
-        <button id="custom-search-icon">🔍</button>
-         
-    </div>
-    
-       
-    <button id="teacher-docs-button">
-      <i class="fa fa-book"></i> 
-      Tài liệu giáo viên
-    </button>
+      <div class="actions">
+        <div class="custom-search-section">
+          <input
+            type="text"
+            id="custom-search-input"
+            placeholder="Nhập từ khóa tìm tài liệu, khóa học..."
+          />
+          <a id="custom-search-icon" href="#"
+            ><img src="research.png" width="30" height="25"
+          /></a>
+        </div>
+
+        <button id="teacher-docs-button">
+          <i class="fa fa-book"></i>
+          TÀI LIỆU GIÁO VIÊN
+        </button>
       </div>
     </div>
-  </div>
+
     <div class="menu">
-      <img src="anhhome2.png" width="32px" alt="Icon" class="menu-icon" />
-      <a href="#">LỚP 1</a>
-      <a href="#">LỚP 2</a>
-      <a href="#">LỚP 3</a>
-      <a href="#">LỚP 4</a>
-      <a href="#">LỚP 5</a>
-      <a href="#">LỚP 6</a>
-      <a href="#">LỚP 7</a>
-      <a href="#">LỚP 8</a>
-      <a href="#">LỚP 9</a>
-      <a href="#">LỚP 10</a>
-      <a href="#">LỚP 11</a>
-      <a href="#">LỚP 12</a>
-      <a href="#">GIÁO VIÊN</a>
+      <img src="anhTrangChu.png" width="32px" alt="Icon" class="menu-icon" />
+      <a href="#" class="dropdown-trigger">LỚP 1</a>
+      <div class="dropdown">
+        <div class="menu-column">
+          <a href="#">Giải Vở bài tập Tiếng Việt lớp 1 - KNTT</a>
+          <a href="#">Bài tập Tiếng Việt lớp 1 (Buổi học 2)</a>
+          <a href="#">Giải Vở bài tập Tiếng Việt lớp 1 - CTST</a>
+          <a href="#">Giải Vở bài tập Tiếng Việt lớp 1 - CD</a>
+        </div>
+        <div class="menu-column">
+          <a href="#">Giải bài tập sgk Toán lớp 1 - KNTT</a>
+          <a href="#">Giải Vở bài tập Toán lớp 1 - KNTT</a>
+          <a href="#">Giải Vở bài tập Toán lớp 1 - CTST</a>
+          <a href="#">Giải bài tập sgk Toán lớp 1 - CD</a>
+          <a href="#">Giải Vở bài tập Toán lớp 1 - CD</a>
+        </div>
+
+        <div class="menu-column">
+          <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+          <a href="#">Giáo án, Bài giảng powerpoint lớp 1</a>
+          <a href="#">Đề thi Học kì lớp 1</a>
+          <a href="#">Bài tập cuối tuần Toán lớp 1</a>
+          <a href="#">Bài tập cuối tuần Tiếng Việt lớp 1</a>
+        </div>
+          
+
     </div>
+    <a href="#" class="dropdown-trigger">LỚP 2</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 2 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Giải Toán lớp 2</a>
+        <a href="#">Giải Vở bài tập Toán 2</a>
+        <a href="#">Giải Tiếng Việt lớp 2</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="#">Giải Tiếng Anh lớp 2</a>
+        <a href="#">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="#">Giải Đạo Đức lớp 2</a>
+        <a href="#">Giải Vở bài tập Đạo Đức lớp 2</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 2</a>
+        <a href="#">Giải VBT Hoạt động trải nghiệm lớp 2</a>
+        <a href="#">Giải Âm nhạc lớp 2</a>
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 2 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Giải Toán lớp 2</a>
+        <a href="#">Giải Vở bài tập Toán 2</a>
+        <a href="#">Giải Tiếng Việt lớp 2</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="#">Giải Tiếng Anh lớp 2</a>
+        <a href="#">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="#">Giải Đạo Đức lớp 2</a>
+        <a href="#">Giải Vở bài tập Đạo Đức lớp 2</a>
+        <a href="#">Giải Âm nhạc lớp 2</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 2 - CÁNH DIỀU</a>
+        <a href="#">Giải Toán lớp 2</a>
+        <a href="#">Giải Vở bài tập Toán 2</a>
+        <a href="#">Giải Tiếng Việt lớp 2</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 2</a>
+        <a href="#">Giải Tiếng Anh lớp 2</a>
+        <a href="#">Giải Tự nhiên & Xã hội lớp 2</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 2</a>
+        <a href="#">Giải Âm nhạc lớp 2/a>
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 2</a>
+        <a href="#">Đề thi Học kì lớp 2</a>
+        <a href="#">Bài tập cuối tuần Toán lớp 2</a>
+        <a href="#">Bài tập cuối tuần Tiếng Việt lớp 2</a>
+      </div>
+      
+
+         
+    </div>
+    <a href="#" class="dropdown-trigger">LỚP 3</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 3 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Giải Toán lớp 3</a>
+        <a href="#">Giải Vở bài tập Toán lớp 3</a>
+        <a href="#">Giải Tiếng Việt lớp 3</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 3</a>
+        <a href="#">Giải Đạo đức lớp 3</a>
+        <a href="#">Giải Tin học lớp 3</a>
+        <a href="#">Giải Công nghệ lớp 3</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 3</a>
+        <a href="#">Giải Tự nhiên xã hội lớp 3</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 3 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Giải Toán lớp 3</a>
+        <a href="#">Giải Vở bài tập Toán lớp 3</a>
+        <a href="#">Giải Tiếng Việt lớp 3</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 3</a>
+        <a href="#">Giải Đạo đức lớp 3</a>
+        <a href="#">Giải Tin học lớp 3</a>
+        <a href="#">Giải Công nghệ lớp 3</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 3</a>
+        <a href="#">Giải Tự nhiên xã hội lớp 3</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 3 - CÁNH DIỀU</a>
+        <a href="#">Giải Toán lớp 3</a>
+        <a href="#">Giải Vở bài tập Toán lớp 3</a>
+        <a href="#">Giải Tiếng Việt lớp 3</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 3</a>
+        <a href="#">Giải Đạo đức lớp 3</a>
+        <a href="#">Giải Tin học lớp 3</a>
+        <a href="#">Giải Công nghệ lớp 3</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 3</a>
+        <a href="#">Giải Tự nhiên xã hội lớp 3</a>
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giải Tiếng Anh lớp 3 Global Success</a>
+        <a href="#">Giải Tiếng Anh lớp 3 Smart Start</a>
+        <a href="#">Giải Tiếng Anh lớp 3 Family and Friends</a>
+        <a href="#">Giải Tiếng Anh lớp 3 Explore Our World
+        </a><br>
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 3</a>
+        <a href="#">Đề thi Học kì lớp 3</a>
+        <a href="#">Bài tập cuối tuần Toán lớp 3</a>
+        <a href="#">Bài tập cuối tuần Tiếng Việt lớp 3</a>
+      </div>
+      
+
+         
+    </div>
+    <a href="#" class="dropdown-trigger">LỚP 4</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 4 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Giải Toán lớp 4</a>
+        <a href="#">Giải Vở bài tập Toán lớp 4</a>
+        <a href="#">Giải Tiếng Việt lớp 4</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 4</a>
+        <a href="#">Giải sgk Đạo đức lớp 4</a>
+        <a href="#">Giải Khoa học lớp 4</a>
+        <a href="#">Giải Lịch Sử và Địa Lí lớp 4</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 4</a>
+        <a href="#">Giải Tin học lớp 4</a>
+        <a href="#">Giải Công nghệ lớp 4</a>
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 4 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Giải Toán lớp 4</a>
+        <a href="#">Giải Vở bài tập Toán lớp 4</a>
+        <a href="#">Giải Tiếng Việt lớp 4</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 4</a>
+        <a href="#">Giải Đạo đức lớp 4</a>
+        <a href="#">Giải Khoa học lớp 4</a>
+        <a href="#">Giải Lịch Sử và Địa Lí lớp 4</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 4</a>
+        <a href="#">Giải Tin học lớp 4</a>
+        <a href="#">Giải Công nghệ lớp 4</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 4 - CÁNH DIỀU</a>
+        <a href="#">Giải Toán lớp 4</a>
+        <a href="#">Giải Vở bài tập Toán lớp 4</a>
+        <a href="#">Giải Tiếng Việt lớp 4</a>
+        <a href="#">Giải Vở bài tập Tiếng Việt lớp 4</a>
+        <a href="#">Giải Đạo đức lớp 4</a>
+        <a href="#">Giải Khoa học lớp 4</a>
+        <a href="#">Giải Lịch Sử và Địa Lí lớp 4</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 4</a>
+        <a href="#">Giải Tin học lớp 4</a>
+        <a href="#">Giải Công nghệ lớp 4</a>
+
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TIẾNG ANH LỚP 4</a>
+        <a href="#">Giải Tiếng Anh lớp 4 Global Success</a>
+        <a href="#">Giải Tiếng Anh lớp 4 Smart Start</a>
+        <a href="#">Giải Tiếng Anh lớp 4 Family and Friends</a>
+        <a href="#">Giải Tiếng Anh lớp 4 Explore Our World</a><br>
+
+        <a href="#">TIẾNG ANH LỚP 4</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 4</a>
+        <a href="#">Đề thi Học kì lớp 4</a>
+        <a href="#">Bài tập cuối tuần Toán lớp 4</a>
+        <a href="#">Bài tập cuối tuần Tiếng Việt lớp 4</a>
+      </div>
+       
+
+         
+    </div>
+    <a href="#" class="dropdown-trigger">LỚP 6</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 6 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Soạn Văn 6 (hay nhất)</a>
+        <a href="#">Soạn Văn 6 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 6</a>
+        <a href="#">Giải Khoa học tự nhiên 6</a>
+        <a href="#">Giải Lịch sử 6</a>
+        <a href="#">Giải Địa Lí 6</a>
+        <a href="#">Giải GDCD 6</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Tin học 6</a>
+        <a href="#">Giải Công nghệ 6</a>
+        <a href="#">Giải Âm nhạc 6</a>
+
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 6 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Soạn Văn 6 (hay nhất)</a>
+        <a href="#">Soạn Văn 6 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 6</a>
+        <a href="#">Giải Khoa học tự nhiên 6</a>
+        <a href="#">Giải Lịch sử 6</a>
+        <a href="#">Giải Địa Lí 6</a>
+        <a href="#">Giải GDCD 6</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Tin học 6</a>
+        <a href="#">Giải Công nghệ 6</a>
+        <a href="#">Giải Âm nhạc 6</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 6 - CÁNH DIỀU</a>
+        <a href="#">Soạn Văn 6 (hay nhất)</a>
+        <a href="#">Soạn Văn 6 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 6</a>
+        <a href="#">Giải Khoa học tự nhiên 6</a>
+        <a href="#">Giải Lịch sử 6</a>
+        <a href="#">Giải Địa Lí 6</a>
+        <a href="#">Giải GDCD 6</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Tin học 6</a>
+        <a href="#">Giải Công nghệ 6</a>
+        <a href="#">Giải Âm nhạc 6</a>
+
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TIẾNG ANH LỚP 6</a>
+        <a href="#">Giải Tiếng Anh 6 Global Success</a>
+        <a href="#">Giải Tiếng Anh 6 Smart World</a>
+        <a href="#">Giải Tiếng Anh 6 Friends plus</a>
+        <a href="#">Giải Tiếng Anh 6 Explore English</a><br>
+
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 6</a>
+        
+      </div>
+       
+
+         
+    </div>
+    <a href="#" class="dropdown-trigger">LỚP 7</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 7 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Soạn văn lớp 7 (hay nhất)</a>
+        <a href="#">Soạn văn lớp 7 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 7</a>
+        <a href="#">Giải Khoa học tự nhiên lớp 7</a>
+        <a href="#">Giải Lịch Sử lớp 7</a>
+        <a href="#">Giải Địa Lí lớp 7</a>
+        <a href="#">Giải Giáo dục công dân lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Công nghệ lớp 7</a>
+        <a href="#">Giải Tin học lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 7</a>
+        <a href="#">Giải Giáo dục thể chất lớp 7</a>
+        <a href="#">Giải Âm nhạc lớp 7</a>
+
+
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 7 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Soạn văn lớp 7 (hay nhất)</a>
+        <a href="#">Soạn văn lớp 7 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 7</a>
+        <a href="#">Giải Khoa học tự nhiên lớp 7</a>
+        <a href="#">Giải Lịch Sử lớp 7</a>
+        <a href="#">Giải Địa Lí lớp 7</a>
+        <a href="#">Giải Giáo dục công dân lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Công nghệ lớp 7</a>
+        <a href="#">Giải Tin học lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 7</a>
+        <a href="#">Giải Âm nhạc lớp 7</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 7 - CÁNH DIỀU</a>
+        <a href="#">Soạn văn lớp 7 (hay nhất)</a>
+        <a href="#">Soạn văn lớp 7 (ngắn nhất)</a>
+        <a href="#">Giải Toán lớp 7</a>
+        <a href="#">Giải Khoa học tự nhiên lớp 7</a>
+        <a href="#">Giải Lịch Sử lớp 7</a>
+        <a href="#">Giải Địa Lí lớp 7</a>
+        <a href="#">Giải Giáo dục công dân lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm 6</a>
+        <a href="#">Giải Công nghệ lớp 7</a>
+        <a href="#">Giải Tin học lớp 7</a>
+        <a href="#">Giải Hoạt động trải nghiệm lớp 7</a>
+        <a href="#">Giải Giáo dục thể chất lớp 7</a>
+        <a href="#">Giải Âm nhạc lớp 7</a>>
+
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TIẾNG ANH LỚP 7</a>
+        <a href="#">Giải Tiếng Anh 7 Global Success</a>
+        <a href="#">Giải Tiếng Anh 7 Smart World</a>
+        <a href="#">Giải Tiếng Anh 7 Friends plus</a>
+        <a href="#">Giải Tiếng Anh 7 Explore English</a><br>
+
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 7</a>
+        
+      </div>
+       
+
+         
+    </div>
+    <a href="#" class="dropdown-trigger">LỚP 8</a>
+    <div class="dropdown">
+      <div class="menu-column">
+        <a href="#">LỚP 8 - KẾT NỐI TRI THỨC</a>
+        <a href="#">Soạn văn 8 (hay nhất)</a>
+        <a href="#">Soạn văn 8 (ngắn nhất)</a>
+        <a href="#">Giải Toán 8</a>
+        <a href="#">Giải Khoa học tự nhiên 8</a>
+        <a href="#">Giải Lịch Sử 8</a>
+        <a href="#">Giải Địa Lí 8</a>
+        <a href="#">Giải Giáo dục công dân 8</a>
+        <a href="#">Giải Tin học 8</a>
+        <a href="#">Giải Công nghệ 8</a>
+        <a href="#">Giải Hoạt động trải nghiệm 8</a>
+        <a href="#">Giải Âm nhạc 8</a>
+        
+
+
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 8 - CHÂN TRỜI SÁNG TẠO</a>
+        <a href="#">Soạn văn 8 (hay nhất)</a>
+        <a href="#">Soạn văn 8 (ngắn nhất)</a>
+        <a href="#">Giải Toán 8</a>
+        <a href="#">Giải Khoa học tự nhiên 8</a>
+        <a href="#">Giải Lịch Sử 8</a>
+        <a href="#">Giải Địa Lí 8</a>
+        <a href="#">Giải Giáo dục công dân 8</a>
+        <a href="#">Giải Tin học 8</a>
+        <a href="#">Giải Công nghệ 8</a>
+        <a href="#">Giải Hoạt động trải nghiệm 8</a>
+        <a href="#">Giải Âm nhạc 8</a>
+        
+
+      </div>
+      <div class="menu-column">
+        <a href="#">LỚP 8 - CÁNH DIỀU</a>
+        <a href="#">Soạn văn 8 (hay nhất)</a>
+        <a href="#">Soạn văn 8 (ngắn nhất)</a>
+        <a href="#">Giải Toán 8</a>
+        <a href="#">Giải Khoa học tự nhiên 8</a>
+        <a href="#">Giải Lịch Sử 8</a>
+        <a href="#">Giải Địa Lí 8</a>
+        <a href="#">Giải Giáo dục công dân 8</a>
+        <a href="#">Giải Tin học 8</a>
+        <a href="#">Giải Công nghệ 8</a>
+        <a href="#">Giải Hoạt động trải nghiệm 8</a>
+        <a href="#">Giải Âm nhạc 8</a>
+
+        
+      
+      </div>
+      <div class="menu-column">
+        <a href="#">TIẾNG ANH 8</a>
+        <a href="#">Giải Tiếng Anh 8 Global Success</a>
+        <a href="#">Giải Tiếng Anh 8 Smart World</a>
+        <a href="#">Giải Tiếng Anh 8 Friends plus</a><br>
+        <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+        <a href="#">Giáo án, Bài giảng powerpoint lớp 8</a>
+        <a href="#">Đề thi Giữa kì, Cuối kì lớp 8</a>
+
+        
+        
+      </div>
+      </div>
+      <a href="#" class="dropdown-trigger">LỚP 9</a>
+      <div class="dropdown">
+        <div class="menu-column">
+          <a href="#">SÁCH GIÁO KHOA</a>
+          <a href="#">Soạn Văn 9 (hay nhất)</a>
+          <a href="#">Soạn Văn 9 (ngắn nhất)</a>
+          <a href="#">Soạn Văn 9 (siêu ngắn)</a>
+          <a href="#">Soạn Văn 9 (cực ngắn)</a>
+          <a href="#">Văn mẫu lớp 9</a>
+          <a href="#">Giải Toán 9</a>
+          
+          
+  
+  
+  
+        </div>
+        <div class="menu-column">
+          <a href="#">Giải Vật Lí 9</a>
+          <a href="#">Giải Hóa 9</a>
+          <a href="#">Giải Sinh 9</a>
+          <a href="#">Giải Địa Lí 9</a>
+          <a href="#">Giải Tiếng Anh 9</a>
+          <a href="#">Giải Tiếng Anh 9 mới</a>
+          
+          
+  
+        </div>
+        <div class="menu-column">
+          <a href="#">Giải Lịch sử 9</a>
+          <a href="#">Giải Tin học 9</a>
+          <a href="#">Giải GDCD 9</a>
+          <a href="#">Giải Công nghệ 9</a>
+          <a href="#">Giải Âm nhạc 9</a>
+          <a href="#">Giải Mỹ thuật 9</a>
+         
+  
+          
+        
+        </div>
+        <div class="menu-column">
+          <a href="#">SÁCH VỞ BÀI TẬP</a>
+          <a href="#">Giải SBT lớp 9 (các môn)</a><br>
+          <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+          <a href="#">Giáo án, Bài giảng powerpoint lớp 9</a>
+          <a href="#">Đề thi Giữa kì, Cuối kì lớp 9</a>
+          <a href="#">Đề thi vào 10 môn Toán (các tỉnh)</a>
+          <a href="#">Đề thi vào 10 môn Văn (các tỉnh)</a>
+          <a href="#">Đề thi vào 10 môn Tiếng Anh (các tỉnh)</a>
+
+
+  
+          
+          
+        </div>
+        </div>
+        <a href="#" class="dropdown-trigger">LỚP 10</a>
+        <div class="dropdown">
+          <div class="menu-column">
+            
+              <a href="#">LỚP 10 - KẾT NỐI TRI THỨC</a>
+              <a href="#">Soạn văn 10 (hay nhất)</a>
+              <a href="#">Soạn văn 10 (ngắn nhất)</a>
+              <a href="#">GGiải Toán 10</a>
+              <a href="#">Giải Chuyên đề Toán 10</a>
+              <a href="#">Giải Vật lí 10</a>
+              <a href="#">Giải Hóa học 10</a>
+              <a href="#">Giải Sinh học 10</a>
+              <a href="#">Giải Lịch sử 10</a>
+              <a href="#">Giải Địa lí 10
+              </a>
+              <a href="#">Giải Công nghệ 10
+              </a>
+              <a href="#">Giải Tin học 10</a>
+              <a href="#">Giải Hoạt động trải nghiệm 10</a>
+              <a href="#">Giải Giáo dục quốc phòng 10</a>
+              <a href="#">Giải Giáo dục thể chất 10</a>
+
+              
+      
+      
+      
+            </div>
+            <div class="menu-column">
+              <a href="#">LỚP 10 - CHÂN TRỜI SÁNG TẠO</a>
+              <a href="#">Soạn văn 10 (hay nhất)</a>
+              <a href="#">Soạn văn 10 (ngắn nhất)</a>
+              <a href="#">GGiải Toán 10</a>
+              <a href="#">Giải Chuyên đề Toán 10</a>
+              <a href="#">Giải Vật lí 10</a>
+              <a href="#">Giải Hóa học 10</a>
+              <a href="#">Giải Sinh học 10</a>
+              <a href="#">Giải Lịch sử 10</a>
+              <a href="#">Giải Địa lí 10
+              </a>
+              <a href="#">Giải Công nghệ 10
+              </a>
+              <a href="#">Giải Tin học 10</a>
+              <a href="#">Giải Hoạt động trải nghiệm 10</a>
+              <a href="#">Giải Giáo dục quốc phòng 10</a>
+           
+              
+      
+            </div>
+            <div class="menu-column">
+              <a href="#">LỚP 10 - CÁNH DIỀU</a>
+              <a href="#">Soạn văn 10 (hay nhất)</a>
+              <a href="#">Soạn văn 10 (ngắn nhất)</a>
+              <a href="#">GGiải Toán 10</a>
+              <a href="#">Giải Chuyên đề Toán 10</a>
+              <a href="#">Giải Vật lí 10</a>
+              <a href="#">Giải Hóa học 10</a>
+              <a href="#">Giải Sinh học 10</a>
+              <a href="#">Giải Lịch sử 10</a>
+              <a href="#">Giải Địa lí 10
+              </a>
+              <a href="#">Giải Công nghệ 10
+              </a>
+              <a href="#">Giải Tin học 10</a>
+              <a href="#">Giải Hoạt động trải nghiệm 10</a>
+              <a href="#">Giải Giáo dục quốc phòng 10</a>
+             
+           
+              
+            
+            </div>
+            <div class="menu-column">
+              <a href="#">TIẾNG ANH</a>
+              <a href="#">Giải Tiếng Anh 10 Global Success</a>
+              <a href="#">Giải Tiếng Anh 10 Smart World</a>
+              <a href="#">Giải Tiếng Anh 10 Friends Global</a>
+              <a href="#">Giải Tiếng Anh 10 Explore New Worlds</a><br>
+              <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+              <a href="#">Giáo án, Bài giảng powerpoint lớp 10</a>
+              <a href="#">Đề thi giữa kì, Cuối kì lớp 10</a>
+             
+              
+           
+              
+            
+            </div>
+          </div>
+          <a href="#" class="dropdown-trigger">LỚP 11</a>
+          <div class="dropdown">
+            <div class="menu-column">
+              
+                <a href="#">LỚP 11 - KẾT NỐI TRI THỨC</a>
+                <a href="#">Soạn văn 11 (hay nhất)</a>
+                <a href="#">Soạn văn 11 (ngắn nhất)</a>
+                <a href="#">GGiải Toán 11</a>
+                <a href="#">Giải Chuyên đề Toán 11</a>
+                <a href="#">Giải Vật lí 11</a>
+                <a href="#">Giải Hóa học 11</a>
+                <a href="#">Giải Sinh học 11</a>
+                <a href="#">Giải Lịch sử 11</a>
+                <a href="#">Giải Địa lí 11
+                </a>
+                <a href="#">Giải Công nghệ 11
+                </a>
+                <a href="#">Giải Tin học 11</a>
+                <a href="#">Giải Hoạt động trải nghiệm 11</a>
+                <a href="#">Giải Giáo dục quốc phòng 11</a>
+                <a href="#">Giải Giáo dục thể chất 11</a>
+  
+                
+        
+        
+        
+              </div>
+              <div class="menu-column">
+                <a href="#">LỚP 11 - CHÂN TRỜI SÁNG TẠO</a>
+                <a href="#">Soạn văn 11 (hay nhất)</a>
+                <a href="#">Soạn văn 11 (ngắn nhất)</a>
+                <a href="#">GGiải Toán 11</a>
+                <a href="#">Giải Chuyên đề Toán 11</a>
+                <a href="#">Giải Vật lí 11</a>
+                <a href="#">Giải Hóa học 11</a>
+                <a href="#">Giải Sinh học 11</a>
+                <a href="#">Giải Lịch sử 11</a>
+                <a href="#">Giải Địa lí 11
+                </a>
+                <a href="#">Giải Công nghệ 11
+                </a>
+                <a href="#">Giải Tin học 11</a>
+                <a href="#">Giải Hoạt động trải nghiệm 11</a>
+                <a href="#">Giải Giáo dục quốc phòng 11</a>
+             
+                
+        
+              </div>
+              <div class="menu-column">
+                <a href="#">LỚP 11 - CÁNH DIỀU</a>
+                <a href="#">Soạn văn 11 (hay nhất)</a>
+                <a href="#">Soạn văn 11 (ngắn nhất)</a>
+                <a href="#">GGiải Toán 11</a>
+                <a href="#">Giải Chuyên đề Toán 11</a>
+                <a href="#">Giải Vật lí 11</a>
+                <a href="#">Giải Hóa học 11</a>
+                <a href="#">Giải Sinh học 11</a>
+                <a href="#">Giải Lịch sử 11</a>
+                <a href="#">Giải Địa lí 11
+                </a>
+                <a href="#">Giải Công nghệ 11
+                </a>
+                <a href="#">Giải Tin học 11</a>
+                <a href="#">Giải Hoạt động trải nghiệm 11</a>
+                <a href="#">Giải Giáo dục quốc phòng 11</a>
+               
+             
+                
+              
+              </div>
+              <div class="menu-column">
+                <a href="#">TIẾNG ANH</a>
+                <a href="#">Giải Tiếng Anh 11 Global Success</a>
+                <a href="#">Giải Tiếng Anh 11 Smart World</a>
+                <a href="#">Giải Tiếng Anh 11 Friends Global</a><br>
+               
+                <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+                <a href="#">Giáo án, Bài giảng powerpoint lớp 11</a>
+                <a href="#">Đề thi giữa kì, Cuối kì lớp 11</a>
+               
+                
+             
+                
+              
+              </div>
+            </div>
+            <a href="#" class="dropdown-trigger">LỚP 12</a>
+      <div class="dropdown">
+        <div class="menu-column">
+          <a href="#">SÁCH GIÁO KHOA</a>
+          <a href="#">Soạn Văn 12 (hay nhất)</a>
+          <a href="#">Soạn Văn 12 (ngắn nhất)</a>
+          <a href="#">Soạn Văn 12 (siêu ngắn)</a>
+          <a href="#">Soạn Văn 12 (cực ngắn)</a>
+          <a href="#">Văn mẫu lớp 12</a>
+          <a href="#">Giải Toán 12</a>
+          <a href="#">Giải Toán 12 Nâng cao</a>
+
+          
+          
+  
+  
+  
+        </div>
+        <div class="menu-column">
+          <a href="#">Giải Vật Lí 12</a>
+          <a href="#">Giải Vật Lí 12 Nâng cao</a>
+          <a href="#">Giải Hóa 12</a>
+          <a href="#">Giải Hóa 12 nâng cao</a>
+          <a href="#">Giải Sinh 12</a>
+          <a href="#">Giải Sinh 12 nâng cao</a>
+          <a href="#">Giải Địa Lí 12</a>
+
+          
+          
+  
+        </div>
+        <div class="menu-column">
+          <a href="#">Giải Tiếng Anh 12</a>
+          <a href="#">Giải Tiếng Anh 12 mới</a>
+          <a href="#">Giải Lịch sử 12</a>
+          <a href="#">Giải Tin học 12</a>
+          <a href="#">Giải GDCD 12</a>
+          <a href="#">Giải Công nghệ 12</a>
+          <a href="#">Giải Giáo dục quốc phòng 12</a>
+
+         
+  
+          
+        
+        </div>
+        <div class="menu-column">
+          <a href="#">SÁCH VỞ BÀI TẬP</a>
+          <a href="#">Giải SBT lớp 12 (các môn)</a><br>
+          <a href="#">TÀI LIỆU GIÁO VIÊN</a>
+          <a href="#">Giáo án, Bài giảng powerpoint lớp 12</a>
+          <a href="#">Đề thi Giữa kì, Cuối kì lớp 12</a>
+          <a href="#">Đề ôn thi THPTQG (các môn)</a>
+          <a href="#">Đề thi thử 2023 THPTQG (cả nước)</a>
+          <a href="#">Đề thi ĐGNL, ĐGTD năm 2023</a>
+
+
+  
+          
+          
+        </div>
+        </div>
+        <a href="#" class="dropdown-trigger">GIÁO VIÊN</a>
+        <div class="dropdown">
+          <div class="menu-column">
+            <a href="#">LỚP 1</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 1</a>
+            <a href="#">Đề thi Học kì lớp 1</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 1</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 1</a><br>
+            <a href="#">LỚP 2</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 2</a>
+            <a href="#">Đề thi Học kì lớp 2</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 2</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 2</a><br>
+            <a href="#">LỚP 3</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 3</a>
+            <a href="#">Đề thi Học kì lớp 3</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 3</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 3</a><br>
+
+            
+            
+    
+    
+    
+          </div>
+          <div class="menu-column">
+            <a href="#">LỚP 4</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 4</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 4</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 4</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 4</a><br>
+            <a href="#">LỚP 5</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 5</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 5</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 5</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 5</a><br>
+            <a href="#">LỚP 6</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 6</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 6</a>
+            <a href="#">Bài tập cuối tuần Toán lớp 6</a>
+            <a href="#">Bài tập cuối tuần Tiếng Việt lớp 6</a><br>
+  
+            
+            
+    
+          </div>
+          <div class="menu-column">
+            <a href="#">LỚP 7</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 7</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 7</a><br>
+           
+            <a href="#">LỚP 8</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 8</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 8</a><br>
+           
+            <a href="#">LỚP 9</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 9</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 9</a>
+            <a href="#">Đề thi vào 10 môn Toán (các tỉnh)</a>
+            <a href="#">Đề thi vào 10 môn Văn (các tỉnh)</a>
+            <a href="#">Đề thi vào 10 môn Tiếng Anh (các tỉnh)</a>
+
+  
+           
+    
+            
+          
+          </div>
+          <div class="menu-column">
+            <a href="#">LỚP 10</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 10</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 10</a><br>
+           
+            <a href="#">LỚP 11</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 11</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 11</a><br>
+           
+            <a href="#">LỚP 12</a>
+            <a href="#">Giáo án, Bài giảng powerpoint lớp 12</a>
+            <a href="#">Đề thi Giữa kì, Cuối kì lớp 12</a>
+            <a href="#">Bộ đề ôn thi THPT Quốc gia (các môn)</a>
+            <a href="#">Đề thi thử 2023 THPT Quốc gia (cả nước)</a>
+            <a href="#">Đề thi ĐGNL, ĐGTD năm 2023</a>
+  
+  
+    
+            
+            
+          </div>
+          </div>
+        
+
+    <script src="script.js"></script>
   </body>
 </html>
-  

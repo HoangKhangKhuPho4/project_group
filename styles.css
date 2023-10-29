@@ -14,9 +14,10 @@ body {
 }
 
 .custom-search-section {
+  margin-top: -10px;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: white;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 25px;
@@ -25,18 +26,13 @@ body {
 
 #custom-search-input {
   flex-grow: 1;
-  padding: 5px 10px;
+  padding: auto 10px;
   border: none;
   border-radius: 25px 0 0 25px;
   outline: none;
 }
 
 #custom-search-icon {
-  padding: 5px 10px;
-  background-color: transparent;
-  border: none;
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
   font-size: 1rem;
   margin-left: -4px;
 }
@@ -65,13 +61,18 @@ body {
 }
 
 #teacher-docs-button {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-top: -10px;
+  width: -120px;
+  height: 48px;
   margin-left: 10px;
-  padding: 5px 15px;
   background-color: #ffa500;
   border: none;
-  border-radius: 10px;
+  border-radius: none;
   color: white;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +128,6 @@ body {
 
 .menu {
   background-color: darkorange;
-  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,18 +146,6 @@ body {
   background-color: #a0522d;
   padding: 3px;
   border-radius: 5px;
-}
-
-#teacher-docs-button {
-  padding: 5px 15px;
-  background-color: #ffa500;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .header {
   display: flex;
@@ -193,34 +181,167 @@ body {
 .custom-search-section {
   margin-right: 10px;
 }
-#teacher-docs-button i {
-  margin-right: 5px;
-}
-/* làm cho nút tài liệu giáo viên to ra */
-#teacher-docs-button {
-  padding: 8px 20px;
-}
-#teacher-docs-button {
-  height: 40px;
-}
-#teacher-docs-button {
-  font-size: 18px;
-}
-#teacher-docs-button {
-  border: 2px solid #ccc;
-}
-/* Để bo tròn nút tài liệu giáo viên */
-.custom-search-section {
-  border-radius: 25px;
-}
-#teacher-docs-button {
-  border-radius: 25px;
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-#teacher-docs-button {
-  border-radius: 30px;
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a0522d;
+  width: 100%;
+  flex-wrap: wrap;
 }
-#teacher-docs-button {
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+
+.dropdown a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-trigger:hover + .dropdown,
+.dropdown:hover {
+  display: flex;
+}
+.menu-column {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu-column {
+  margin-right: 20px;
+}
+
+.menu-column:last-child {
+  margin-right: 0;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.menu-column:last-child {
+  margin-right: 0;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a0522d;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột đều nhau */
+  gap: 10px; /* Khoảng cách giữa các cột */
+}
+
+.dropdown a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block; /* Đảm bảo rằng mỗi liên kết sẽ chiếm toàn bộ chiều rộng của cột */
+}
+
+.menu-column {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.dropdown-trigger:hover + .dropdown,
+.dropdown:hover {
+  display: grid;
+}
+.menu a.dropdown-trigger:hover,
+.menu a.dropdown-trigger:hover + .dropdown {
+  background-color: #a0522d; /* Đây là màu nâu, bạn có thể thay đổi theo ý muốn */
+}
+
+.menu a {
+  padding: 5px 10px; /* Thêm padding cho liên kết để nó tô màu toàn bộ phần nội dung */
+  margin: 0; /* Đảm bảo không có margin */
+}
+
+.dropdown {
+  margin-top: 0; /* Loại bỏ margin-top (nếu có) để đảm bảo không có khoảng trắng giữa ô và dropdown */
+  /* ... phần còn lại của mã CSS ... */
+}
+/* set màu cho toàn bộ lớp 1*/
+/* Thêm đoạn này */
+.menu-column a:hover {
+  background-color: #a0522d;
+  color: white;
+}
+.dropdown-trigger:hover + .dropdown,
+.dropdown:hover {
+  display: flex;
+}
+
+.menu a.dropdown-trigger,
+.menu .dropdown {
+  transition: background-color 0.3s; /* Thêm hiệu ứng mượt mà khi thay đổi màu */
+}
+.menu li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Tạo cho <li> che phủ toàn bộ chiều cao của nav bar */
+}
+/* set 4 cột đều nhau */
+.menu li:hover {
+  background-color: #a0522d;
+}
+
+.menu li:hover a.dropdown-trigger {
+  background-color: inherit; /* Kế thừa màu từ thẻ li cha */
+  color: white; /* Màu chữ trắng khi hover */
+}
+
+.menu li:hover .dropdown {
+  background-color: #8b4513; /* Màu đậm hơn cho dropdown */
+}
+.menu-column a:hover,
+.menu-column a:focus {
+  background-color: #daa520;
+  padding: 5px 10px; /* Để cung cấp một chút đệm cho liên kết */
+  border-radius: 5px; /* Để làm mềm góc của nền */
+  transition: background-color 0.3s ease; /* Chuyển đổi màu sắc một cách nhẹ nhàng */
+}
+.menu-column a:hover,
+.menu-column a:focus {
+  background-color: #daa520 !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+/* thay đổi dropdown cho lớp 2 */
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-column {
+  flex: 1;
+}
+.dropdown {
+  gap: 0;
+}
+.dropdown {
+  transition: opacity 0.3s;
 }
